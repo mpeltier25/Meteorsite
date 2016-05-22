@@ -1,0 +1,36 @@
+<template name="postSubmit">
+  <form class="main form page">
+  <br>
+    <div class="form-group {{errorClass 'firstName'}}">
+      <label class="control-label" for="firstName">First Name</label>
+      <div class="controls">
+          <input name="firstName" id="firstName" type="text" value="" class="form-control"/>
+          <span class="help-block">{{errorMessage 'firstName'}}</span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="form-group {{errorClass 'lastName'}}">
+      <label class="control-label" for="lastName">Last Name</label>
+      <div class="controls">
+          <input name="lastName" id="lastName" type="text" value="" class="form-control"/>
+          <span class="help-block">{{errorMessage 'lastName'}}</span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="form-group {{errorClass 'primaryContactEmail'}}">
+      <label class="control-label" for="lastName">Primary Contact email address *</label>
+      <hr/>
+      <br>
+      <label class="control-label" for="lastName">Please use @gmail.com or @Live.com </label>
+      <div class="controls">
+          <input name="primaryContactEmail" id="primaryContactEmail" type="text" value="" class="form-control"/>
+          <span class="help-block">{{errorMessage 'primaryContactEmail'}}</span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</template>
